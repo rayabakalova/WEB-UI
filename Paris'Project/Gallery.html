@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Gallery</title>
+	<style type="text/css">
+			
+	body{
+		background-color: black;
+				
+	}
+
+	div.HomeImg {
+		background-image: url("guide_paris_2.jpg") no-repeat;
+		border-bottom: 1px solid #666;
+		border-color: #e5e5e5;
+		height: 40%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		
+	}
+
+	div.HomeImg img{
+		width: 100%;
+		height: 100%;
+	}
+
+	 ul{
+		list-style-type: none;
+		background-color: lightgrey;
+		margin: 20% 0% 0% -1%;
+		padding: 0;
+		width: 16%;
+		font-size: 14pt;
+		height: 100%;
+		overflow: auto;
+		left: 0;
+
+		}
+	li a {
+		display: block;
+		text-decoration: none;
+		color: purple;
+		text-align: left;
+		border: 1px solid #555;
+		height: 3%;
+		padding: 5%;
+
+
+
+		}
+	 li a.activ{
+	 	background-color: #9370db;
+	    color: white;
+	 }
+	 li a:hover:not(.activ){
+	 	background-color: #555;
+	    color: white;
+	 }
+
+	 #Container{
+	 	height: 450px;
+	 	width: 300px;
+	 	margin: -60% 0% 0% 32%;
+	 	position: relative;
+	 }
+
+	 #picture{
+	 	
+		width: 230%;
+		height: 120%;
+		float: left;
+		border-radius: 5%;
+		position: absolute;
+	 }
+
+	 #LeftHolder{
+	 	height: 450px;
+	 	width: 100px;
+	 	position: absolute;
+	 	left: 0;
+	 	top: 0;
+
+
+	 }
+
+	 #RightHolder{
+	 	height: 450px;
+	 	width: 100px;
+	 	position: absolute;
+	 	right: 0;
+	 	top: 0;
+
+	 }
+
+	 .left{
+	 	height: 50px;
+	 	width: 50px;
+	 	position: absolute;
+	 	top: 40%;
+	 	left: 0px;
+	 }
+
+	 .right{
+	 	height: 50px;
+	 	width: 50px;
+	 	position: absolute;
+	 	top: 40%;
+	 	right: 0px;
+	 }
+	</style>
+	<script src="Gallery.js"></script>
+</head>
+<body>
+
+<div class="HomeImg">
+		<img src="guide_paris_2.jpg">
+	</div>
+
+	<!-- Unordered list for navigation bar -->
+	<ul id="Landmarks">
+		<li><a class="activ" href="ParisLandmarks.html">Home</a></li>
+		<li><a href="paris.html">About Paris</a></li>
+		<li><a href="EiffelTower.html">Eiffel Tower</a></li>
+		<li><a href="#Louvre">The Louvre</a></li>
+		<li><a href="#Triomphe">Arc de Triomphe</a></li>
+		<li><a href="#Tuileries">Tuileries Gardens</a></li>
+		<li><a href="#Opera">Palais Opera House</a></li>
+		<li><a href="#Sacre">Sacre Coeur Basilica</a></li>
+		<li><a href="#Disney">Disneyland Paris</a></li>
+		<li><a href="River.html">River cruise</a></li>
+		<li><a href="Bridge">Alexander bridge</a></li>
+		<li><a href="Concorde.html">Place de la Concorde</a></li>
+		<li><a href="LuxembourgGardens">Luxembourg Gardens</a></li>
+		<li><a href="Pantheon">Pantheon</a></li>
+		<li><a href="Versailles">Versailles</a></li>
+		<li><a href="NotreDame">Notre Dame de Paris</a></li>
+		<li><a href="ChampsElysees">Champs-Elysees</a></li>
+		<li><a href="LaDefense">La Defense</a></li>
+		<li><a href="MoulinRouge">Moulin Rouge</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+	</ul>
+
+	<div id="Container">
+		<img id="picture"  src="Gallery/img1.jpg"/>
+		<div id="LeftHolder"><img onClick="slide(-1)" class="left" src="Gallery/left.png"/></div>
+		<div id="RightHolder"><img onClick="slide(1)" class="right" src="Gallery/right.png"/></div>
+	</div>
+ 
+</body>
+</html>
