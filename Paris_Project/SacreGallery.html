@@ -1,0 +1,168 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Paris</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+
+	body{
+		background-color: black;
+		padding: 0;
+		margin: 0;
+				
+	}
+	
+	div.HomeImg {
+		background-image: url("guide_paris_2.jpg") no-repeat;
+		border-bottom: 1px solid #666;
+		border-color: #e5e5e5;
+		left: 0;
+		top: 0;
+		position: relative;
+		
+	}
+
+	div.HomeImg img{
+		width: 100%;
+		height: 30%;
+	}
+
+	div.HomeImg h1{
+		color: white;
+		float: right;
+		font-size: 35pt; 
+		margin-right: 15%;
+		position: static;
+	}
+
+#navigation {
+  
+  
+  background-color:red;
+  float:left;
+  margin:5px;
+  height: 100%;
+  width: 15%;
+}
+
+#Landmarks{
+		list-style-type: none;
+		background-color: lightgrey;
+		margin: 0%;
+		padding: 0px;
+		width: 100%;
+		font-size: 14pt;
+		height: 100%;
+		overflow: auto;
+		left: 0;
+		position: relative;
+
+		}
+	li a {
+		display: block;
+		text-decoration: none;
+		color: purple;
+		text-align: left;
+		border: 1px solid #555;
+		height: 3%;
+		padding: 5%;
+
+
+		}
+	 li a.activ{
+	 	background-color: #9370db;
+	    color: white;
+	 }
+	 li a:hover:not(.activ){
+	 	background-color: #555;
+	    color: white;
+	 }
+
+.title {
+  width:70%;
+  float:left;
+  margin:5px;
+  
+
+}
+
+#text{
+	color: #ffccff;
+	font-family: 'Josefin Slab', serif;
+	text-decoration: underline;
+	font-size: 3em;
+	position: relative;
+	text-align: center;
+}
+
+.information {
+  width:70%;
+  height: 50%;
+  position: relative;
+  float:left;
+  margin:5px;
+  text-align: center;
+  
+}
+
+#Basilica{
+	border-radius: 10px;
+	width: 90%;
+	height: 80%;
+}
+
+#left,#right{
+	width: 5%;
+	height: 5%;
+	background-color: #ffccff;
+}
+
+
+	</style>
+	<script type="text/javascript" src="SacreGallery.js"></script>
+
+	</head>
+	<body>
+
+	<div class="HomeImg">
+		<img src="guide_paris_2.jpg">
+		
+	</div>
+<div id="outerContainer">
+  <div id="navigation">
+  	<ul id="Landmarks">
+		<li><a class="activ" href="ParisLandmarks.html">Home</a></li>
+		<li><a href="AboutParis.html">About Paris</a></li>
+		<li><a href="EiffelTower.html" >Eiffel Tower</a></li>
+		<li><a href="Louvre.html">The Louvre</a></li>
+		<li><a href="Triomphe.html">Arc de Triomphe</a></li>
+		<li><a href="Tuileries.html">Tuileries Gardens</a></li>
+		<li><a href="Opera.html">Palais Opera House</a></li>
+		<li><a href="Sacre.html">Sacre Coeur Basilica</a></li>
+		<li><a href="Disney.html">Disneyland Paris</a></li>
+		<li><a href="River.html">River cruise</a></li>
+		<li><a href="Bridge.html">Alexander bridge</a></li>
+		<li><a href="Concorde.html">Place de la Concorde</a></li>
+		<li><a href="LuxembourgGardens.html">Luxembourg Gardens</a></li>
+		<li><a href="Pantheon.html">Pantheon</a></li>
+		<li><a href="Versailles.html">Versailles</a></li>
+		<li><a href="NotreDame.html">Notre Dame de Paris</a></li>
+		<li><a href="ChampsElysees.html">Champs-Elysees</a></li>
+		<li><a href="LaDefense.html">La Defense</a></li>
+		<li><a href="MoulinRouge.html">Moulin Rouge</a></li>
+		<li><a href="Gallery.html">Gallery</a></li>
+		<li><a href="Recommended.html">Recommended Cafes and Restaurants</a></li>
+	</ul>
+  </div>
+  
+   <div class="title">
+  	<p id="text">Gallery</p></div>
+  <div class="information">
+  <img src="Basilica/basilica1.jpg" id="Basilica">
+  <div class="left">
+  	<img id="left" src="Gallery/left.png" onclick="slide(-1)">
+  	<img id="right" src="Gallery/right.png" onclick="slide(1)"></div>
+ 
+
+  	</body>
+	</html>
