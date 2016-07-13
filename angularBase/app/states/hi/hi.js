@@ -11,7 +11,8 @@
         $stateProvider
             .state('hi', {
                 url: '/hi',
-                template: '<hi name="\'Bob\'"></hi>'
+                template: '<hi name="\'Bob\'"></hi>',
+                params: {site: ''}
             });
     }
 
@@ -28,8 +29,9 @@
         return directive;
     }
 
-    controller.$inject = ['$scope', 'survey'];
-    function controller($scope, survey) {
+    controller.$inject = ['$scope', 'survey', '$stateParams'];
+    function controller($scope, survey, $stateParams) {
+        $stateParams.site;
         $scope.survey = survey;
 
         $scope.sayHi = sayHi;
