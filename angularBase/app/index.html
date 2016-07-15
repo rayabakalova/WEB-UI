@@ -19,6 +19,8 @@
     <!-- endinject -->
     <!-- endbuild -->
     <link rel="stylesheet" href="vendor/alertifyjs/dist/css/alertify.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/Index.css">
+
 </head>
 
 <body>
@@ -27,13 +29,16 @@
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
+    <div class="HomeImg">
+        <img id="home" src="states/index/guide_paris_2.jpg">
+    </div>
+
+<!-- List of landmarks -->
+
+
+    <div id="outerContainer">
         <menu></menu>
-        <div class="row content">
-            <div class="col-md-12">
-                <ui-view></ui-view>
-            </div>
-        </div>
+        <ui-view></ui-view>       
     </div>
 
 
@@ -111,6 +116,7 @@
     <script src="mainCtrl.js"></script>
     <script src="services/api.js"></script>
     <script src="services/example.js"></script>
+    <script src="services/landmarks.js"></script>
     <script src="services/mockData.js"></script>
     <script src="services/mocks.js"></script>
     <script src="services/notify.js"></script>
@@ -119,6 +125,8 @@
     <script src="components/menu/menu.js"></script>
     <script src="libs/datatables/datatables.min.js"></script>
     <script src="services/translations/de.js"></script>
+    <script src="states/city/city.js"></script>
+    <script src="states/city/cityService.js"></script>
     <script src="states/hi/hi.js"></script>
     <script src="states/home/home.js"></script>
     <script src="states/news/news.js"></script>

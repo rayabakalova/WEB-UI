@@ -16,9 +16,9 @@
         return directive;
     }
 
-    controller.$inject = ['$scope', 'conf'];
-    function controller($scope, conf) {
-        console.log($scope.conf);
+    controller.$inject = ['$scope', 'landmarks'];
+    function controller($scope, landmarks) {
+        $scope.paris = landmarks.paris;
     }
 
 }(angular));
