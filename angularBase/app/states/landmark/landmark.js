@@ -13,7 +13,7 @@
                 url: '/landmark',
                 title: 'Landmarks',
                 template: '<landmark-state></landmark-state>',
-                params: {name: '', description: '', image: ''}
+                params: {name: '', description: '', image: '', path: ''}
             });
     }
 
@@ -34,9 +34,11 @@
         $scope.name = stateParams.name;
         $scope.description = stateParams.description;
         $scope.image = stateParams.image;
+        $scope.path = stateParams.path;
 
-        $scope.goto = function(site){
-            $state.go('landmark', {site: site})
+        $scope.goto = function(state, path) {
+            $state.go(state, {path: path})
+
         }
 
         api
