@@ -12,7 +12,8 @@
             .state('home', {
                 url: '/',
                 title: 'Home',
-                template: '<home-state></home-state>'
+                template: '<home-state></home-state>',
+                params: {name: '', description: '', image: ''}
             });
     }
 
@@ -27,8 +28,8 @@
         return directive;
     }
 
-    controller.$inject = ['$scope', '$rootScope', 'api'];
-    function controller($scope, $rootScope, api, $state) {
+    controller.$inject = ['$scope', '$rootScope', 'api', '$state', '$stateParams'];
+    function controller($scope, $rootScope, api, $state, stateParams) {
 
         $scope.goto = function(site){
             $state.go('hi', {site: site})

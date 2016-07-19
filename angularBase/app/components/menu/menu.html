@@ -2,6 +2,6 @@
         <div id="navigation">
             <ul id="Landmarks">
                 <li><a class="activ" href="Index.html">Home</a></li>
-                <li><a class="activ" ng-repeat="landmarks in paris">{{landmarks.name}}</a></li>
+                <li><a ui-sref-active="activ" ng-repeat="landmarks in paris" ui-sref="landmark(landmarks)">{{landmarks.name}}</a></li>
             </ul>
         </div>
