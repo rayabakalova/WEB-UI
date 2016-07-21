@@ -35,14 +35,14 @@
         var path = stateParams.path || '/assets/images/Gallery/PicturesGallery/img';
         $scope.slide = function(x) {
 
-            var total = 4,
+            var total = 5,
             Image = document.getElementById('Gallery');
-        
+
+            imagecount = imagecount + x;        
             if (imagecount > total) {
                 imagecount = 1;
             }
 
-            imagecount = imagecount + x;
             if (imagecount < 1) {
                 imagecount = total;
             }

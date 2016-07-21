@@ -3,7 +3,7 @@
             <ul id="Landmarks">
                 <li><a class="activ" href="index.html">Home</a></li>
                 <li><a ui-sref-active="activ" ng-repeat="landmarks in paris" ui-sref="landmark(landmarks)">{{landmarks.name}}</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Recommended cafes and restaurants</a></li>
+                <li><a ui-sref-active="activ" ui-sref="gallery">Gallery</a></li>
+                <li><a ui-sref-active="activ" ui-sref="recommended">Recommended cafes and restaurants</a></li>
             </ul>
         </div>
