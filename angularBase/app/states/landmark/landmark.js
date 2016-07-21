@@ -10,7 +10,7 @@
     function config($stateProvider) {
         $stateProvider
             .state('landmark', {
-                url: '/landmark',
+                url: '/landmark/:name/:description/:image',
                 title: 'Landmarks',
                 template: '<landmark-state></landmark-state>',
                 params: {name: '', description: '', image: '', path: ''}
@@ -31,25 +31,30 @@
     controller.$inject = ['$scope', '$rootScope', 'api', '$state', '$stateParams', 'landmarks'];
     function controller($scope, $rootScope, api, $state, stateParams, landmarks) {
 
-        $scope.name = stateParams.name;
+        $scope.name = stateParams.name;        
+        $scope.landmark = _.find(landmarks.paris, function (landmark) {
+            return landmark.name === $scope.name; 
+        })
+
         $scope.description = stateParams.description;
+         $scope.landmark = _.find(landmarks.paris, function (landmark) {
+            return landmark.description === $scope.description; 
+        })
+        
         $scope.image = stateParams.image;
+        $scope.description = stateParams.description;
+         $scope.landmark = _.find(landmarks.paris, function (landmark) {
+            return landmark.image === $scope.image; 
+        })
+
         $scope.path = stateParams.path;
+       
+        
 
         $scope.goto = function(state, path) {
             $state.go(state, {path: path})
 
         }
-
-        api
-        .get('users')
-        .then(function (res) {
-            console.log(res.data);
-        });
-
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
     }
 
 }(angular));

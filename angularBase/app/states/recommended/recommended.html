@@ -1,16 +1,18 @@
 <link rel="stylesheet" type="text/css" href="/styles/Recommended.css">
 
-<div class="title">
-  	<p id="text">Recommended Cafes and Restaurants</p></div>
-	
-  <div class="information">
-  <h1 ng-repeat="rec in recom">{{rec.[name]}}</h1>
-  	<img id="Moulins" class="TextWrap" ng-src="{{image}}">
-  	<img id="picture" class="picture" ng-src="{{image}}">
-  	  	
-  <p></p>
+<p id="text">Recommended Cafes and Restaurants</p>
 
-<h1>La Mer a Boire</h1>
+<div class="title" ng-repeat="rec in recom">
+	<h1>{{rec.name}}</h1>
+		<img clas="textWrap" id="Boire" ng-src="{{rec.image}}">
+		<img id="picture" ng-source="{{rec.image}}">
+		<p>{{rec.description}}</p> 
+
+</div>	
+
+
+
+<!-- <h1>La Mer a Boire</h1>
 <img src="Boire.jpg" id="Boire" class="TextWrap">
 <img src="Boire.jpg" id="picture2" class="picture">
 
@@ -25,6 +27,7 @@
 <img src="EiffelTowerRestaurant.jpg" id="picture3" class="picture">
 <p>The Eiffel Tower can offer its visitors the most breathtaking tables in Paris: where vistors will be entertained with a feast for their eyes as well as for their taste buds. With its different restaurants, the Tower has got it covered if you're looking for something to eat, from the simple snack to the finest French cuisine. What is better than eat something delicious and watch the city from the Eiffel Tower?
 </p>
-<a href="https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html">See more restaurants</a>
+<a href="https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html">See more restaurants</a> -->
 
-</div>
+
+

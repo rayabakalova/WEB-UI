@@ -23,13 +23,13 @@
 				{
 					name: "La Mer a Boire",
 					description: "If it feels like you're on top of the world, it's because you are: La Mer a Boire overlooks the Parc de Belleville, one of the highest points in Paris, which offers a gorgeous vista of the cityscape all the way out to the Eiffel Tower. At the first sign of balmy weather, the large paved terrace is in high demand with the young local crowd, but inside is just as nice: the bright orange cafe offers free Wi-Fi, and serves as a gallery for cartoonists and graphic novelists, as well as a concert hall for young musicians on weekend nights.", 
-					image: '/assets/images/Boire.jpg',
+					image: '/assets/images/Boire.jpg'
 				},
 
 				{
 					name: "Eiffel Tower Restaurants",
 					description: "The Eiffel Tower can offer its visitors the most breathtaking tables in Paris: where vistors will be entertained with a feast for their eyes as well as for their taste buds. With its different restaurants, the Tower has got it covered if you're looking for something to eat, from the simple snack to the finest French cuisine. What is better than eat something delicious and watch the city from the Eiffel Tower?",
-					image: '/assets/images/EiffelTowerRestaurant.jpg',
+					image: '/assets/images/EiffelTowerRestaurant.jpg'
 				},
 
 				

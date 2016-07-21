@@ -29,28 +29,17 @@
         return directive;
     }
 
-    controller.$inject = ['$scope', '$rootScope', 'api', '$state', '$stateParam','recomLand'];
-    function controller($scope, $rootScope, api, $state, stateParam, recomLand) {
+    controller.$inject = ['$scope', '$rootScope', 'api', '$state', 'recomLands'];
+    function controller($scope, $rootScope, api, $state, recomLands) {
 
 
-        $scope.name=stateParam.name;
-        $scope.description=stateParam.description;
-        $scope.image=stateParam.image;
+        $scope.recom = recomLands.recom;
         
         $scope.goto = function(state, path) {
             $state.go(state, {path: path})
 
         }
 
-        api
-        .get('users')
-        .then(function (res) {
-            console.log(res.data);
-        });
-
-        $(document).ready(function() {
-            $('#example').DataTable();
-        });
     }
 
 }(angular));

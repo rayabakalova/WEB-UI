@@ -49,6 +49,7 @@
             Image.src = path + imagecount + ".jpg";
 
         }
+        $scope.slide(0);
 
         $scope.goto = function(site){
             $state.go('landmark', {site: site})
