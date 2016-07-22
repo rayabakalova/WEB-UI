@@ -1,0 +1,45 @@
+landmark-state {
+	.title {
+	  width:70%;
+	  float:left;
+	  margin:5px;
+
+	}
+
+	#text{
+		color: #ffccff;
+		font-family: 'Josefin Slab', serif;
+		text-decoration: underline;
+		font-size: 3em;
+		position: relative;
+		text-align: center;
+	}
+
+	.text-wrap{
+	float:right;
+	margin: 5px;
+	}
+
+	.information {
+	  width:70%;
+	  height: 50%;
+	  position: relative;
+	  float:left;
+	  margin:5px;
+	  text-align: center;
+	}
+		
+
+	p{
+		color: white;
+		text-align: left;
+		font-size: 18pt;
+	}
+
+
+	img {
+	height: 40%;
+	width: 40%;
+	border-radius: 10%;
+	}
+}

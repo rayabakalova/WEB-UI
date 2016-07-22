@@ -1,0 +1,93 @@
+recom-state {
+	
+	.title {
+		width:70%;
+		float:left;
+		margin:5px;
+
+	}
+
+	#text {
+		color: #ffccff;
+		font-family: 'Josefin Slab', serif;
+		text-decoration: underline;
+		font-size: 3em;
+		position: relative;
+		text-align: center;
+		}
+
+	.text-wrap{
+		float: left;
+		margin: 5px;
+		}
+
+	.picture {
+		position: absolute;
+		width: 0px;
+		-webkit-transition:width 0.3s linear 0s;
+		transition: width 0.3s linear 0s;
+		z-index: 10;
+		
+	}
+
+	/*Pop up picture*/
+
+	.text-wrap:hover + .picture {
+		width: 340px;
+		height: 260px;
+		border-radius: 10%;
+
+	}
+
+	.information {
+		width:70%;
+		height: 50%;
+		position: relative;
+		float:right;
+		margin:5px;
+		text-align: center;
+	}
+
+	p {
+		color: white;
+		text-align: left;
+		font-size: 15pt;
+	}
+
+	 h1 {
+	 	color: #ffccff;
+	 }
+
+	 #Boire {
+		height: 30%;
+		width: 30%;
+		border-radius: 10%;
+	}
+
+	#icon {
+	  	
+		float: left;
+		margin: 5px;
+		position: fixed;
+		
+	}
+	#icon1 {
+	height: 8%;
+		width: 8%;
+		margin: 0% 20% 0% 20%;
+
+	}
+
+	#icon2 {
+	height: 8%;
+		width: 8%;
+		margin: 0% 0% 0% 10%;
+	}
+
+	#icon3 {
+	height: 8%;
+		width: 8%;
+		border-radius: 100%;
+		margin: 0% 0% 0% 0%;
+	}
+}

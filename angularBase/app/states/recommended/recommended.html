@@ -1,33 +1,25 @@
-<link rel="stylesheet" type="text/css" href="/styles/Recommended.css">
+<!-- <link rel="stylesheet" type="text/css" href="/styles/Recommended.css"> -->
 
-<p id="text">Recommended Cafes and Restaurants</p>
+<p class="title" id="text">Recommended Cafes and Restaurants</p>
 
-<div class="title" ng-repeat="rec in recom">
+<div class="information" ng-repeat="rec in recom">
 	<h1>{{rec.name}}</h1>
-		<img clas="textWrap" id="Boire" ng-src="{{rec.image}}">
-		<img id="picture" ng-source="{{rec.image}}">
-		<p>{{rec.description}}</p> 
+		<img class="text-wrap" id="Boire" ng-src="{{rec.image}}">
+		<p>{{rec.description}}</p> 		
+</div>
+<div class="icon">
+ 
 
-</div>	
-
-
-
-<!-- <h1>La Mer a Boire</h1>
-<img src="Boire.jpg" id="Boire" class="TextWrap">
-<img src="Boire.jpg" id="picture2" class="picture">
-
-<p>If it feels like you're on top of the world, it's because you are: La Mer a Boire overlooks the Parc de Belleville, one of the highest points in Paris, which offers a gorgeous vista of the cityscape all the way out to the Eiffel Tower. At the first sign of balmy weather, the large paved terrace is in high demand with the young local crowd, but inside is just as nice: the bright orange cafe offers free Wi-Fi, and serves as a gallery for cartoonists and graphic novelists, as well as a concert hall for young musicians on weekend nights.
-</p>
-<a href="https://www.theguardian.com/travel/2011/may/06/top-10-cafes-paris">See more cafes</a>
-
-<h1>Eiffel Tower Restaurants</h1>
-<a href="restaurant.mp4" title="See Video">
-<img src="EiffelTowerRestaurant.jpg" id="EiffelTowerRestaurant" class="TextWrap">
+<a href="https://www.theguardian.com/travel/2011/may/06/top-10-cafes-paris">
+	<img id= "icon2" title="See more cafes" src="/assets/images/coffee.png">
 </a>
-<img src="EiffelTowerRestaurant.jpg" id="picture3" class="picture">
-<p>The Eiffel Tower can offer its visitors the most breathtaking tables in Paris: where vistors will be entertained with a feast for their eyes as well as for their taste buds. With its different restaurants, the Tower has got it covered if you're looking for something to eat, from the simple snack to the finest French cuisine. What is better than eat something delicious and watch the city from the Eiffel Tower?
-</p>
-<a href="https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html">See more restaurants</a> -->
+<a href="https://www.tripadvisor.com/Restaurants-g187147-Paris_Ile_de_France.html">
+	<img id="icon1" title="See more restaurants" src="/assets/images/restaurant.png">
+</a>
 
+<a href="/assets/images/video/restaurant.mp4">
+	<img id="icon3" title="See Eiffel Tower Restaurant" src="/assets/images/tower.png">
+</a>
+</div>
 
 
