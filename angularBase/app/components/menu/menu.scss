@@ -1,11 +1,24 @@
 menu {
-	#lbl, #navigation {
+	#lbl {
 		background-color: #ffccff;
 		color: #555;
+		text-align: center;
+		
+	}
+
+	#navigation {
+	background-color: #ffccff;
+		color: #555;
+		
+
+	}
+
+	#input-text {
+	width: auto;
 	}
 
 	#outer-container {
-	width: 120%;
+	width: 100%;
 	
 	}
 

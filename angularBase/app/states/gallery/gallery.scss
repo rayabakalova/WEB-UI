@@ -1,11 +1,29 @@
 gallery-state {
 
 	.title {
-			width:70%;
-			float:left;
-			margin:5px;
-		}
-	
+		width:70%;
+		float:left;
+		margin:5px;
+	}
+
+	#text {
+	color: #ffccff;
+	font-family: 'Josefin Slab', serif;
+	text-decoration: underline;
+	font-size: 3em;
+	position: relative;
+	text-align: center;
+	}
+
+	.information {
+	  width:70%;
+	  height: 50%;
+	  position: relative;
+	  float:left;
+	  margin:5px;
+	  text-align: center;	  
+	}
+
 	img {
 		border-radius: 10px;
 		width: 70%;
@@ -17,5 +35,6 @@ gallery-state {
 		height: 5%;
 		background-color: #ffccff;
 	}
+
 
 }

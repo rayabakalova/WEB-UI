@@ -17,6 +17,7 @@
 					name: "Cafe des 2 Moulins",
 					description: "The Cafe des 2 Moulins' claim to fame came in the form of Jean-Pierre Jeunet's instant classic film Amelie, which used it as the heroine's charmingly vintage place of employ. Ten years after the film's release, tourists still pop in on their pilgrimage tour of Amelie's Montmartre, but it has largely gone back to being a comfy neighbourhood cafe – minus the tobacco counter, which has been nixed in favour of more sitting room. The scatter of tables and bright red chairs on the sloping pavement is the perfect vantage point from which to observe the lively street market.",
 					image: '/assets/images/Moulins.jpg'
+				
 					
 				},
 

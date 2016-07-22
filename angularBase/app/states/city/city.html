@@ -2,6 +2,7 @@
   <div>
   
   <input type="text" ng-model="search" />
+  <img id="Gallery">
     <ul>
       <li ng-repeat="city in cities | orderBy: 'name' | filter: search" ng-click="showTemperature(city)">{{city.name}} : <span ng-show="city.show">{{city.temperature}}</span></li>
     </ul>
