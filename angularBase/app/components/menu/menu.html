@@ -1,6 +1,6 @@
 <div id="outer-container">
         <div id="navigation">
-        	<label id="lbl">Search: <input id="input-text" ng-model="search.name"></label>
+        	<label id="lbl">Search: <input id="input-text" ng-model="search.name" placeholder="Search landmarks"></label>
             <ul id="Landmarks">
                 <li><a class="activ" href="index.html">Home</a></li>
                 <li><a ui-sref-active="activ" ng-repeat="landmarks in paris | filter: search: name" ui-sref="landmark(landmarks)">{{landmarks.name}}</a></li>
